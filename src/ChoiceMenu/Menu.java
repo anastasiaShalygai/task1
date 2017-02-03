@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class Menu {
 
+    //Constructor - is a class for build a particular class objects. It is incorrect to overload this method by such logic
     public Menu() {
         int numTask;
 
@@ -37,18 +38,21 @@ public class Menu {
 
         switch (numTask) {
             case 1: {
+                // better to name variables more meaningful
                 RandomArray a = new RandomArray();
                 System.out.println("\n\n");
                 new Menu();
                 break;
             }
             case 2: {
+                // better to name variables more meaningful
                 LengthString b = new LengthString();
                 System.out.println("\n\n");
                 new Menu();
                 break;
             }
             case 3:{
+                // better to name variables more meaningful
                 SimpleСalculator b = new SimpleСalculator();
                 System.out.println("\n\n");
                 new Menu();

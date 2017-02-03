@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class SimpleСalculator {
 
+    //Constructor - is a class for build a particular class objects. It is incorrect to overload this method by such logic
     public SimpleСalculator() {
         double number1;
         double number2;

@@ -7,8 +7,10 @@ import java.util.Scanner;
  */
 public class LengthString {
 
+    //Code convention - methods starts from lower case letters
     public LengthString() {
         int amountString = 0;
+        //For what is this action?
         String[] stringArray = new String[amountString];
 
         amountString = enterAmountString();

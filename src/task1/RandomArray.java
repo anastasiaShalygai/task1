@@ -8,6 +8,8 @@ import java.util.Scanner;
  */
 public class RandomArray {
 
+    // due to usage of this variable only as a modifier of array size, it could be inner - in particular method
+    // or initialize intArray as a instance variable too
     public static final int SIZE_ARRAY = 5;
 
     public RandomArray() {
@@ -48,6 +50,7 @@ public class RandomArray {
 
         if(sc.hasNextInt()) {
             symbol = sc.nextInt();
+            //In this case, it is better to use Try Catch construction at the outer level
             //sc.close(); //где его лучше закрыть?
             return symbol;
         } else {
