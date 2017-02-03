@@ -19,17 +19,23 @@ public class LengthString {
         printArray(stringArray, amountString);
     }
 
-    private String [] enterArray(int amountString) {
+    /**
+     * What methods is doing?
+     *
+     * @param amountString - amount of Strings inputed from command line
+     * @return - array of Strings
+     */
+    private String[] enterArray(int amountString) {
         String[] stringArray = new String[amountString];
 
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; i < amountString; i++) {
+        for (int i = 0; i < amountString; i++) {
             System.out.print("Строка " + i + ": ");
             stringArray[i] = sc.nextLine();
         }
         //sc.close();
 
-        return stringArray ;
+        return stringArray;
     }
 
     private int enterAmountString() {
@@ -38,7 +44,7 @@ public class LengthString {
         System.out.print("Введите кол-во строк: ");
         Scanner sc = new Scanner(System.in);
 
-        if(sc.hasNextInt()) {
+        if (sc.hasNextInt()) {
             symbol = sc.nextInt();
             //sc.close();
             return symbol;
